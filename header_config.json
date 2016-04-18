@@ -1,0 +1,89 @@
+{
+  "toolsItems": [
+    {
+      "name": "<i>my</i>FT",
+      "url": "#",
+      "attributes": "aria-label=\"my F T\""
+    },
+    {
+      "name": "Sign In",
+      "url": "#"
+    },
+    {
+      "name": "My Account",
+      "url": "#"
+    }
+  ],
+  "navItems": [
+    {
+      "name": "The Blog",
+      "url": "http://ftalphaville2.ft.com"
+    },
+    {
+      "name": "Markets Live",
+      "url": "http://ftalphaville2.ft.com/marketslive"
+    },
+    {
+      "name": "The Long Room",
+      "url": "http://ftalphaville2.ft.com/longroom"
+    }
+  ],
+  "desktopMeganavItems": [
+    {
+      "name": "The Blog",
+      "url": "http://ftalphaville2.ft.com"
+    },
+    {
+      "name": "Markets Live",
+      "url": "http://ftalphaville2.ft.com/marketslive"
+    },
+    {
+      "name": "The Long Room",
+      "url": "http://ftalphaville2.ft.com/longroom"
+    }
+  ],
+  "mobileMeganavItems": [
+    {
+      "name": "The Blog",
+      "url": "http://ftalphaville2.ft.com"
+    },
+    {
+      "name": "Market Live",
+      "url": "http://ftalphaville2.ft.com/marketslive"
+    },
+    {
+      "name": "The Long Room",
+      "url": "http://ftalphaville2.ft.com/longroom"
+    }
+  ],
+  "meganavSections": [
+    {
+      "name": "The Blog",
+      "meganavSectionItems": [
+        {
+          "name": "Index",
+          "url": "http://ftalphaville2.ft.com"
+        },
+        {
+          "name": "Death of Banks",
+          "url": "#"
+        },
+        {
+          "name": "Alphachat",
+          "url": "#"
+        },
+        {
+          "name": "BitcoinMania",
+          "url": "#"
+        },
+        {
+          "name": "Meet the Team",
+          "url": "#"
+        },
+        {
+          "name": "About FTAV",
+          "url": "#"
+        }
+      ]
+    }]
+}
