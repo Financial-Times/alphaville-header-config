@@ -1,17 +1,12 @@
 {
   "toolsItems": [
     {
-      "name": "<i>my</i>FT",
-      "url": "#",
-      "attributes": "aria-label=\"my F T\""
-    },
-    {
       "name": "Sign In",
-      "url": "#"
+      "url": "https://accounts.ft.com/login?location="
     },
     {
       "name": "My Account",
-      "url": "#"
+      "url": "http://registration.ft.com/registration/selfcare/"
     }
   ],
   "navItems": [
