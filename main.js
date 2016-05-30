@@ -1,5 +1,6 @@
+"use strict";
 
-var headerConfig = require('./header_config.json');
+const headerConfig = require('./header_config.json');
 
 module.exports = {
 	setSelected : function(sectionName){

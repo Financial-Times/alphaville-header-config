@@ -1,84 +1,85 @@
 {
-  "toolsItems": [
-    {
-      "name": "Sign In",
-      "url": "https://accounts.ft.com/login?location="
-    },
-    {
-      "name": "My Account",
-      "url": "https://registration.ft.com/registration/selfcare/"
-    }
-  ],
-  "navItems": [
-    {
-      "name": "The Blog",
-      "url": "/"
-    },
-    {
-      "name": "Markets Live",
-      "url": "/marketslive"
-    },
-    {
-      "name": "The Long Room",
-      "url": "/longroom"
-    }
-  ],
-  "desktopMeganavItems": [
-    {
-      "name": "The Blog",
-      "url": "/"
-    },
-    {
-      "name": "Markets Live",
-      "url": "/marketslive"
-    },
-    {
-      "name": "The Long Room",
-      "url": "/longroom"
-    }
-  ],
-  "mobileMeganavItems": [
-    {
-      "name": "The Blog",
-      "url": "/"
-    },
-    {
-      "name": "Market Live",
-      "url": "/marketslive"
-    },
-    {
-      "name": "The Long Room",
-      "url": "/longroom"
-    }
-  ],
-  "meganavSections": [
-    {
-      "name": "The Blog",
-      "meganavSectionItems": [
-        {
-          "name": "Index",
-          "url": "/"
-        },
-        {
-          "name": "Death of Banks",
-          "url": "#"
-        },
-        {
-          "name": "Alphachat",
-          "url": "#"
-        },
-        {
-          "name": "BitcoinMania",
-          "url": "#"
-        },
-        {
-          "name": "Meet the Team",
-          "url": "#"
-        },
-        {
-          "name": "About FTAV",
-          "url": "#"
-        }
-      ]
-    }]
+	"toolsItems": [
+		{
+			"name": "Sign In",
+			"url": "https://accounts.ft.com/login?location="
+		},
+		{
+			"name": "My Account",
+			"url": "https://registration.ft.com/registration/selfcare/"
+		}
+	],
+	"navItems": [
+		{
+			"name": "The Blog",
+			"url": "/"
+		},
+		{
+			"name": "Markets Live",
+			"url": "/marketslive"
+		},
+		{
+			"name": "The Long Room",
+			"url": "/longroom"
+		}
+	],
+	"desktopMeganavItems": [
+		{
+			"name": "The Blog",
+			"url": "/"
+		},
+		{
+			"name": "Markets Live",
+			"url": "/marketslive"
+		},
+		{
+			"name": "The Long Room",
+			"url": "/longroom"
+		}
+	],
+	"mobileMeganavItems": [
+		{
+			"name": "The Blog",
+			"url": "/"
+		},
+		{
+			"name": "Market Live",
+			"url": "/marketslive"
+		},
+		{
+			"name": "The Long Room",
+			"url": "/longroom"
+		}
+	],
+	"meganavSections": [
+		{
+			"name": "The Blog",
+			"meganavSectionItems": [
+				{
+					"name": "Index",
+					"url": "/"
+				},
+				{
+					"name": "Death of Banks",
+					"url": "#"
+				},
+				{
+					"name": "Alphachat",
+					"url": "#"
+				},
+				{
+					"name": "BitcoinMania",
+					"url": "#"
+				},
+				{
+					"name": "Meet the Team",
+					"url": "#"
+				},
+				{
+					"name": "About FTAV",
+					"url": "#"
+				}
+			]
+		}
+	]
 }
