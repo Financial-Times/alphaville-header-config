@@ -1,24 +1,12 @@
 {
 	"toolsItems": [
 		{
-			"label": "Sign out",
-			"url": "https://accounts.ft.com/logout?location=",
-			"class": "av2-visible-logged-in av2-url-referrer"
+			"name": "Sign In",
+			"url": "https://accounts.ft.com/login?location="
 		},
 		{
 			"name": "My Account",
-			"url": "https://registration.ft.com/registration/selfcare/",
-			"class": "av2-visible-logged-in"
-		},
-		{
-			"name": "Sign In",
-			"url": "https://accounts.ft.com/login?location=",
-			"class": "av2-visible-logged-out av2-url-referrer"
-		},
-		{
-			"label": "Subscribe",
-			"url": "http://registration.ft.com/registration/subscription-service/bpsp?segid=70152",
-			"class": "av2-visible-logged-out"
+			"url": "https://registration.ft.com/registration/selfcare/"
 		}
 	],
 	"navItems": [
@@ -102,26 +90,6 @@
 				{
 					"name": "About FTAV",
 					"url": "#"
-				},
-				{
-					"label": "Sign out",
-					"url": "https://accounts.ft.com/logout?location=",
-					"class": "av2-visible-logged-in av2-url-referrer"
-				},
-				{
-					"name": "My Account",
-					"url": "https://registration.ft.com/registration/selfcare/",
-					"class": "av2-visible-logged-in"
-				},
-				{
-					"name": "Sign In",
-					"url": "https://accounts.ft.com/login?location=",
-					"class": "av2-visible-logged-out av2-url-referrer"
-				},
-				{
-					"label": "Subscribe",
-					"url": "http://registration.ft.com/registration/subscription-service/bpsp?segid=70152",
-					"class": "av2-visible-logged-out"
 				}
 			]
 		}
