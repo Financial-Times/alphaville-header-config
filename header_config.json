@@ -65,7 +65,7 @@
 			"url": "/"
 		},
 		{
-			"name": "Market Live",
+			"name": "Markets Live",
 			"url": "/marketslive",
 			"lozenge": {
 				"class": "ml-live-lozenge",
