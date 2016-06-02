@@ -3,8 +3,8 @@
 		{
 			"name": "Sign In",
 			"url": "https://accounts.ft.com/login",
-			"liClass": "av2-logged-in-hidden av2-url-referrer",
-			"attributes": "data-av2-url-referrer=\"location\""
+			"liClass": "av2-logged-in-hidden",
+			"attributes": "data-av2-url-referrer=\"location\" data-av2-url-referrer-value=\"current_location\""
 		},
 		{
 			"name": "Subscribe",
@@ -15,7 +15,7 @@
 			"name": "Sign out",
 			"url": "https://accounts.ft.com/logout",
 			"liClass": "av2-logged-out-hidden",
-			"attributes": "data-av2-url-referrer=\"location\""
+			"attributes": "data-av2-url-referrer=\"location\" data-av2-url-referrer-value=\"home_location\""
 		},
 		{
 			"name": "My Account",
@@ -78,9 +78,9 @@
 		},
 		{
 			"name": "Sign In",
-			"url": "https://accounts.ft.com/login?location=",
+			"url": "https://accounts.ft.com/login",
 			"liClass": "av2-logged-in-hidden",
-			"attributes": "data-av2-url-referrer=\"location\""
+			"attributes": "data-av2-url-referrer=\"location\" data-av2-url-referrer-value=\"current_location\""
 		},
 		{
 			"name": "Subscribe",
@@ -89,9 +89,9 @@
 		},
 		{
 			"name": "Sign out",
-			"url": "https://accounts.ft.com/logout?location=",
+			"url": "https://accounts.ft.com/logout",
 			"liClass": "av2-logged-out-hidden",
-			"attributes": "data-av2-url-referrer=\"location\""
+			"attributes": "data-av2-url-referrer=\"location\" data-av2-url-referrer-value=\"home_location\""
 		},
 		{
 			"name": "My Account",
