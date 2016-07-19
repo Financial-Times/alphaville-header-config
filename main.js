@@ -42,11 +42,11 @@ module.exports = {
 						},
 						{
 							name: "Meet the Team",
-							url: "#"
+							url: "/meet-the-team"
 						},
 						{
 							name: "About FTAV",
-							url: "#"
+							url: "/about"
 						}
 					]
 				},
