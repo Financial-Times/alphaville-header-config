@@ -29,18 +29,6 @@ module.exports = {
 					id: 'the_blog',
 					items: [
 						{
-							name: "Death of Banks",
-							url: "#"
-						},
-						{
-							name: "Alphachat",
-							url: "#"
-						},
-						{
-							name: "BitcoinMania",
-							url: "#"
-						},
-						{
 							name: "Meet the Team",
 							url: "/meet-the-team"
 						},
