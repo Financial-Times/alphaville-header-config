@@ -1,7 +1,7 @@
 module.exports = {
 	navItems: [
 		{
-			name: "The Blog",
+			name: "Home",
 			url: "/"
 		},
 		{
@@ -23,7 +23,7 @@ module.exports = {
 					url: "http://www.ft.com"
 				},
 				{
-					name: "The Blog",
+					name: "Home",
 					url: "/",
 					expandable: true,
 					id: 'the_blog',
