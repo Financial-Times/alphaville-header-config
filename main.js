@@ -29,24 +29,12 @@ module.exports = {
 					id: 'the_blog',
 					items: [
 						{
-							name: "Death of Banks",
-							url: "#"
-						},
-						{
-							name: "Alphachat",
-							url: "#"
-						},
-						{
-							name: "BitcoinMania",
-							url: "#"
-						},
-						{
 							name: "Meet the Team",
-							url: "#"
+							url: "/meet-the-team"
 						},
 						{
 							name: "About FTAV",
-							url: "#"
+							url: "/about"
 						}
 					]
 				},
