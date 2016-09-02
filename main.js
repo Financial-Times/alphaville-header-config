@@ -1,4 +1,9 @@
-module.exports = {
+"use strict";
+
+const _ = require('lodash');
+const alphavilleTeamMembers = require('alphaville-team-members');
+
+const defaultNavItems = {
 	navItems: [
 		{
 			name: "Home",
@@ -19,7 +24,7 @@ module.exports = {
 			title: "Top sections",
 			meganavSectionItems: [
 				{
-					name: "FT.com home",
+					name: "FT.com",
 					url: "http://www.ft.com"
 				},
 				{
@@ -74,4 +79,71 @@ module.exports = {
 			liClass: "av2-logged-out-hidden"
 		}
 	]
+};
+
+let cachedNavItems = _.cloneDeep(defaultNavItems);
+let navCachedBySelected = [];
+
+
+
+function initCache () {
+	alphavilleTeamMembers.getMemberNames().then((teamMemberNames) => {
+		if (teamMemberNames && teamMemberNames.length) {
+			cachedNavItems = _.cloneDeep(defaultNavItems);
+
+			teamMemberNames.forEach((tm) => {
+				cachedNavItems.meganavSections[0].meganavSectionItems[1].items.push({
+					name: tm.name,
+					url: `/search?q=${encodeURIComponent(tm.name)}`
+				});
+			});
+
+			navCachedBySelected = [];
+		} else {
+			setTimeout(initCache, 10000);
+		}
+	}).catch((e) => {
+		console.log("header-config", "Error fetching team members", e);
+		setTimeout(initCache, 10000);
+	});
+}
+initCache();
+
+
+exports.get = function (navSelected) {
+	if (navSelected) {
+		if (navCachedBySelected[navSelected]) {
+			return navCachedBySelected[navSelected];
+		} else {
+			const navItems = _.cloneDeep(cachedNavItems);
+
+			if (navItems && navItems.navItems) {
+				navItems.navItems.map((obj) => {
+					if (obj.name.indexOf(navSelected) > -1) {
+						obj.selected = true;
+					}
+					return obj;
+				});
+			}
+
+			if (navItems && navItems.meganavSections) {
+				navItems.meganavSections.forEach((section) => {
+					if (section.meganavSectionItems) {
+						section.meganavSectionItems.map((obj) => {
+							if (obj.name.indexOf(navSelected) > -1) {
+								obj.selected = true;
+							}
+							return obj;
+						});
+					}
+				});
+			}
+
+			navCachedBySelected[navSelected] = navItems;
+
+			return navItems;
+		}
+	} else {
+		return cachedNavItems;
+	}
 };
