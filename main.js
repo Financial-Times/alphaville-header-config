@@ -59,24 +59,24 @@ const defaultNavItems = {
 		{
 			name: "Sign In",
 			url: "https://accounts.ft.com/login",
-			liClass: "av2-logged-in-hidden",
-			attributes: "data-av2-url-referrer=\"location\" data-av2-url-referrer-value=\"current_location\""
+			liClass: "alphaville-logged-in-hidden",
+			attributes: "data-alphaville-url-referrer=\"location\" data-alphaville-url-referrer-value=\"current_location\""
 		},
 		{
 			name: "Subscribe",
 			url: "http://registration.ft.com/registration/subscription-service/bpsp?segid=70152",
-			liClass: "av2-logged-in-hidden"
+			liClass: "alphaville-logged-in-hidden"
 		},
 		{
 			name: "Sign out",
 			url: "https://accounts.ft.com/logout",
-			liClass: "av2-logged-out-hidden",
-			attributes: "data-av2-url-referrer=\"location\" data-av2-url-referrer-value=\"home_location\""
+			liClass: "alphaville-logged-out-hidden",
+			attributes: "data-alphaville-url-referrer=\"location\" data-alphaville-url-referrer-value=\"home_location\""
 		},
 		{
 			name: "My Account",
 			url: "https://registration.ft.com/registration/selfcare/",
-			liClass: "av2-logged-out-hidden"
+			liClass: "alphaville-logged-out-hidden"
 		}
 	]
 };
