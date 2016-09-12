@@ -65,6 +65,32 @@ const defaultNavItems = {
 		{
 			name: "Subscribe",
 			url: "http://registration.ft.com/registration/subscription-service/bpsp?segid=70152",
+			class: "o-header__nav-button",
+			liClass: "alphaville-logged-in-hidden"
+		},
+		{
+			name: "Sign out",
+			url: "https://accounts.ft.com/logout",
+			liClass: "alphaville-logged-out-hidden",
+			attributes: "data-alphaville-url-referrer=\"location\" data-alphaville-url-referrer-value=\"home_location\""
+		},
+		{
+			name: "My Account",
+			url: "https://registration.ft.com/registration/selfcare/",
+			liClass: "alphaville-logged-out-hidden",
+			class: "o-header__nav-button"
+		}
+	],
+	userNavDrawer: [
+		{
+			name: "Sign In",
+			url: "https://accounts.ft.com/login",
+			liClass: "alphaville-logged-in-hidden",
+			attributes: "data-alphaville-url-referrer=\"location\" data-alphaville-url-referrer-value=\"current_location\""
+		},
+		{
+			name: "Subscribe",
+			url: "http://registration.ft.com/registration/subscription-service/bpsp?segid=70152",
 			liClass: "alphaville-logged-in-hidden"
 		},
 		{
