@@ -70,6 +70,10 @@ const defaultNavItems = {
 				{
 					name: "The Long Room",
 					url: "/longroom"
+				},
+				{
+					name: "AlphaChat",
+					url: "/?search=AlphaChat"
 				}
 			]
 		}
