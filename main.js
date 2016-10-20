@@ -17,6 +17,25 @@ const defaultNavItems = {
 		{
 			name: "The Long Room",
 			url: "/longroom"
+		},
+		{
+			name: "AlphaChat",
+			url: "/?search=AlphaChat"
+		}
+	],
+	mobileNavItems: [
+		{
+			name: "Home",
+			url: "/"
+		},
+		{
+			name: "Markets Live",
+			url: "/marketslive",
+			lozenge: true
+		},
+		{
+			name: "The Long Room",
+			url: "/longroom"
 		}
 	],
 	meganavSections: [
