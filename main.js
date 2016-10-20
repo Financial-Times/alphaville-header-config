@@ -65,7 +65,14 @@ const defaultNavItems = {
 				{
 					name: "Markets Live",
 					url: "/marketslive",
-					lozenge: true
+					expandable: true,
+					lozenge: true,
+					items: [
+						{
+							name: "About Markets Live",
+							url: "/marketslive/about"
+						}
+					]
 				},
 				{
 					name: "The Long Room",
