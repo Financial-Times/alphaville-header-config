@@ -107,8 +107,7 @@ const defaultNavItems = {
 		{
 			name: "My Account",
 			url: "https://registration.ft.com/registration/selfcare/",
-			liClass: "alphaville-logged-out-hidden",
-			button: true
+			liClass: "alphaville-logged-out-hidden"
 		}
 	]
 };
