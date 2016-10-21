@@ -16,7 +16,7 @@ const defaultNavItems = {
 		},
 		{
 			name: "Long Room",
-			url: "/longroom"
+			url: "/uc_longroom"
 		},
 		{
 			name: "AlphaChat",
@@ -35,7 +35,7 @@ const defaultNavItems = {
 		},
 		{
 			name: "Long Room",
-			url: "/longroom"
+			url: "/uc_longroom"
 		}
 	],
 	meganavSections: [
@@ -76,7 +76,7 @@ const defaultNavItems = {
 				},
 				{
 					name: "Long Room",
-					url: "/longroom"
+					url: "/uc_longroom"
 				},
 				{
 					name: "AlphaChat",
