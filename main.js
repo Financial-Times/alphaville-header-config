@@ -15,7 +15,7 @@ const defaultNavItems = {
 			lozenge: true
 		},
 		{
-			name: "The Long Room",
+			name: "Long Room",
 			url: "/longroom"
 		},
 		{
@@ -34,7 +34,7 @@ const defaultNavItems = {
 			lozenge: true
 		},
 		{
-			name: "The Long Room",
+			name: "Long Room",
 			url: "/longroom"
 		}
 	],
@@ -75,7 +75,7 @@ const defaultNavItems = {
 					]
 				},
 				{
-					name: "The Long Room",
+					name: "Long Room",
 					url: "/longroom"
 				},
 				{
