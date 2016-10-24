@@ -19,8 +19,8 @@ const defaultNavItems = {
 			url: "/uc_longroom"
 		},
 		{
-			name: "AlphaChat",
-			url: "/search?q=AlphaChat"
+			name: "Alphachat",
+			url: "/alphachat"
 		}
 	],
 	mobileNavItems: [
@@ -79,8 +79,8 @@ const defaultNavItems = {
 					url: "/uc_longroom"
 				},
 				{
-					name: "AlphaChat",
-					url: "/search?q=AlphaChat"
+					name: "Alphachat",
+					url: "/alphachat"
 				}
 			]
 		}
