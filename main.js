@@ -157,6 +157,15 @@ exports.get = function (navSelected) {
 				});
 			}
 
+			if (navItems && navItems.mobileNavItems) {
+				navItems.mobileNavItems.map((obj) => {
+					if (obj.name.indexOf(navSelected) > -1) {
+						obj.selected = true;
+					}
+					return obj;
+				});
+			}
+
 			if (navItems && navItems.meganavSections) {
 				navItems.meganavSections.forEach((section) => {
 					if (section.meganavSectionItems) {
