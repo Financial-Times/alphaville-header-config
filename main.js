@@ -94,7 +94,7 @@ const defaultNavItems = {
 		},
 		{
 			name: "Subscribe",
-			url: "http://registration.ft.com/registration/subscription-service/bpsp?segid=70152",
+			url: "https://www.ft.com/products?segID=70703&segmentID=190b4443-dc03-bd53-e79b-b4b6fbd04e64",
 			liClass: "alphaville-logged-in-hidden",
 			button: true
 		},
