@@ -53,6 +53,10 @@ const defaultNavItems = {
 					id: 'the_blog',
 					items: [
 						{
+							name: "Most popular",
+							url: "/most-popular"
+						},
+						{
 							name: "Meet the Team",
 							url: "/meet-the-team"
 						},
