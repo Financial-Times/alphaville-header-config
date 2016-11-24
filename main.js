@@ -52,10 +52,14 @@ const defaultNavItems = {
 					expandable: true,
 					id: 'the_blog',
 					items: [
-						/*{
+						{
 							name: "Most popular",
 							url: "/most-popular"
-						},*/
+						},
+						{
+							name: "Most commented",
+							url: "/most-commented"
+						},
 						{
 							name: "Meet the Team",
 							url: "/meet-the-team"
