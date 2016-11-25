@@ -67,6 +67,10 @@ const defaultNavItems = {
 						{
 							name: "About FTAV",
 							url: "/about"
+						},
+						{
+							name: "RSS service",
+							url: "http://ftalphaville-wp.ft.com/feed/"
 						}
 					]
 				},
