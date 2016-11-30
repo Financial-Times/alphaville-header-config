@@ -20,7 +20,7 @@ const defaultNavItems = {
 		},
 		{
 			name: "Alphachat",
-			url: "/alphachat"
+			url: "/series/Alphachat"
 		}
 	],
 	mobileNavItems: [
@@ -93,7 +93,7 @@ const defaultNavItems = {
 				},
 				{
 					name: "Alphachat",
-					url: "/alphachat"
+					url: "/series/Alphachat"
 				}
 			]
 		}
