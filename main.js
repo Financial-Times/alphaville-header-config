@@ -138,7 +138,7 @@ function initCache () {
 			teamMemberNames.forEach((tm) => {
 				cachedNavItems.meganavSections[0].meganavSectionItems[1].items.push({
 					name: tm.name,
-					url: `/author?q=${encodeURIComponent(tm.name)}`
+					url: `/author/${encodeURIComponent(tm.name)}`
 				});
 			});
 
