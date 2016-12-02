@@ -194,7 +194,7 @@ exports.get = function (navSelected) {
 				navItems.meganavSections.forEach((section) => {
 					if (section.meganavSectionItems) {
 						section.meganavSectionItems.map((obj) => {
-							if (obj.name.indexOf(navSelected) > -1) {
+							if (obj.name.indexOf(navSelected) === 0) {
 								obj.selected = true;
 							}
 							return obj;
