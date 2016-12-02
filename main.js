@@ -40,52 +40,24 @@ const defaultNavItems = {
 	],
 	meganavSections: [
 		{
+			meganavSectionItems: [
+				{
+					name: "Back to FT.com",
+					url: "http://www.ft.com"
+				}
+			]
+		},
+		{
 			title: "Top sections",
 			meganavSectionItems: [
 				{
-					name: "FT.com",
-					url: "http://www.ft.com"
-				},
-				{
-					name: "Home",
+					name: "FTAV Home",
 					url: "/",
-					expandable: true,
 					id: 'the_blog',
-					items: [
-						{
-							name: "Most popular",
-							url: "/most-popular"
-						},
-						{
-							name: "Most commented",
-							url: "/most-commented"
-						},
-						{
-							name: "Meet the Team",
-							url: "/meet-the-team"
-						},
-						{
-							name: "About FTAV",
-							url: "/about"
-						},
-						{
-							name: "RSS service",
-							url: "http://ftalphaville.ft.com/feed/",
-							attributes : " target=\"_blank\""
-						}
-					]
 				},
 				{
 					name: "Markets Live",
 					url: "/marketslive",
-					expandable: true,
-					lozenge: true,
-					items: [
-						{
-							name: "About Markets Live",
-							url: "/marketslive/about"
-						}
-					]
 				},
 				{
 					name: "Long Room",
@@ -94,7 +66,46 @@ const defaultNavItems = {
 				{
 					name: "Alphachat",
 					url: "/series/Alphachat"
+				},
+				{
+					name: "Meet the Team",
+					url: "/meet-the-team"
+				},
+				{
+					name: "About FTAV",
+					url: "/about"
+				},
+				{
+					name: "About Markets Live",
+					url: "/marketslive/about"
+				},
+				{
+					name: "RSS service",
+					url: "http://ftalphaville.ft.com/feed/",
+					attributes : " target=\"_blank\""
+				},
+				{
+					name: "Get in touch",
+					url: "mailto:alphaville@ft.com"
 				}
+			]
+		},
+		{
+			title: "Filter by ...",
+			meganavSectionItems: [
+				{
+					name: "Most popular",
+					url: "/most-popular"
+				},
+				{
+					name: "Most commented",
+					url: "/most-commented"
+				}
+			]
+		},
+		{
+			title: "Filter by author",
+			meganavSectionItems: [
 			]
 		}
 	],
@@ -136,7 +147,7 @@ function initCache () {
 			cachedNavItems = _.cloneDeep(defaultNavItems);
 
 			teamMemberNames.forEach((tm) => {
-				cachedNavItems.meganavSections[0].meganavSectionItems[1].items.push({
+				cachedNavItems.meganavSections[3].meganavSectionItems.push({
 					name: tm.name,
 					url: `/author/${encodeURIComponent(tm.name)}`
 				});
