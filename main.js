@@ -70,7 +70,7 @@ const defaultNavItems = {
 						},
 						{
 							name: "RSS service",
-							url: "http://ftalphaville-wp.ft.com/feed/",
+							url: "http://ftalphaville.ft.com/feed/",
 							attributes : " target=\"_blank\""
 						}
 					]
