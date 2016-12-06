@@ -3,6 +3,29 @@
 const _ = require('lodash');
 const alphavilleTeamMembers = require('alphaville-team-members');
 
+const esServiceUrl = 'http://' + process.env['AV_ES_SERVICE_URL'] + '/v1';
+const qs = require('querystring');
+const fetch = require('node-fetch');
+
+const getAvEsServiceContent = (url) => {
+	return fetch(url, {headers: {'X-API-KEY': process.env['AV_ES_SERVICE_KEY']}})
+		.then(res => {
+			if (res.status === 200) {
+				return res.json();
+			}
+	});
+};
+
+const getPopularTopic = (options) => {
+	options = options || {};
+	let url = `${esServiceUrl}/popular-topic?${qs.stringify(_.omit(options, ['noCache']))}`;
+	if (options && options.noCache === true) {
+		url += '&_=' + new Date().getTime();
+	}
+	return getAvEsServiceContent(url);
+};
+
+
 const defaultNavItems = {
 	navItems: [
 		{
@@ -104,6 +127,11 @@ const defaultNavItems = {
 			]
 		},
 		{
+			title: "Filter by topic",
+			meganavSectionItems: [
+			]
+		},
+		{
 			title: "Filter by author",
 			meganavSectionItems: [
 			]
@@ -142,12 +170,26 @@ let navCachedBySelected = [];
 
 
 function initCache () {
+	
+	getPopularTopic().then(topics => {
+		if (topics) {
+			const topicItems = [];
+			topics.forEach(item => {
+				topicItems.push({
+					name: decodeURIComponent(item.pathname.replace('/topic/', '')),
+					url: item.pathname
+				})
+			});
+			defaultNavItems.meganavSections[3].meganavSectionItems = topicItems
+		}
+	})
+
 	alphavilleTeamMembers.getMemberNames().then((teamMemberNames) => {
 		if (teamMemberNames && teamMemberNames.length) {
 			cachedNavItems = _.cloneDeep(defaultNavItems);
 
 			teamMemberNames.forEach((tm) => {
-				cachedNavItems.meganavSections[3].meganavSectionItems.push({
+				cachedNavItems.meganavSections[4].meganavSectionItems.push({
 					name: tm.name,
 					url: `/author/${encodeURIComponent(tm.name)}`
 				});
