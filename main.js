@@ -39,7 +39,7 @@ const defaultNavItems = {
 		},
 		{
 			name: "Long Room",
-			url: "/uc_longroom"
+			url: "/longroom"
 		},
 		{
 			name: "Alphachat",
@@ -58,7 +58,7 @@ const defaultNavItems = {
 		},
 		{
 			name: "Long Room",
-			url: "/uc_longroom"
+			url: "/longroom"
 		}
 	],
 	meganavSections: [
@@ -84,7 +84,7 @@ const defaultNavItems = {
 				},
 				{
 					name: "Long Room",
-					url: "/uc_longroom"
+					url: "/longroom"
 				},
 				{
 					name: "Alphachat",
@@ -170,7 +170,7 @@ let navCachedBySelected = [];
 
 
 function initCache () {
-	
+
 	getPopularTopic().then(topics => {
 		if (topics) {
 			const topicItems = [];
