@@ -182,7 +182,10 @@ function initCache () {
 			});
 			defaultNavItems.meganavSections[3].meganavSectionItems = topicItems
 		}
-	})
+	}).catch(e => {
+		console.log("header-config", "Error fetching popular topics", e);
+		setTimeout(initCache, 10000);
+	});
 
 	alphavilleTeamMembers.getMemberNames().then((teamMemberNames) => {
 		if (teamMemberNames && teamMemberNames.length) {
