@@ -104,7 +104,7 @@ const defaultNavItems = {
 				},
 				{
 					name: "RSS service",
-					url: "http://ftalphaville.ft.com/feed/",
+					url: "http://ftalphaville.ft.com/rss-feed/",
 					attributes : " target=\"_blank\""
 				},
 				{
