@@ -1,6 +1,5 @@
 "use strict";
 
-const _ = require('lodash');
 const alphavilleTeamMembers = require('alphaville-team-members');
 
 const esServiceUrl = 'http://' + process.env['AV_ES_SERVICE_URL'] + '/v1';
@@ -18,7 +17,8 @@ const getAvEsServiceContent = (url) => {
 
 const getPopularTopic = (options) => {
 	options = options || {};
-	let url = `${esServiceUrl}/popular-topic?${qs.stringify(_.omit(options, ['noCache']))}`;
+	let {noCache, ...optionsWithoutNoCache};
+	let url = `${esServiceUrl}/popular-topic?${qs.stringify(optionsWithoutNoCache))}`;
 	if (options && options.noCache === true) {
 		url += '&_=' + new Date().getTime();
 	}
