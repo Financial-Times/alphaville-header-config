@@ -18,7 +18,7 @@ const getAvEsServiceContent = (url) => {
 const getPopularTopic = (options) => {
 	options = options || {};
 	let {noCache, ...optionsWithoutNoCache} = options;
-	let url = `${esServiceUrl}/popular-topic?${qs.stringify(optionsWithoutNoCache))}`;
+	let url = `${esServiceUrl}/popular-topic?${qs.stringify(optionsWithoutNoCache)}`;
 	if (options && options.noCache === true) {
 		url += '&_=' + new Date().getTime();
 	}
