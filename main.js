@@ -164,7 +164,7 @@ const defaultNavItems = {
 	]
 };
 
-let cachedNavItems = _.cloneDeep(defaultNavItems);
+let cachedNavItems = JSON.parse(JSON.stringify(defaultNavItems));
 let navCachedBySelected = [];
 
 
@@ -189,7 +189,7 @@ function initCache () {
 
 	alphavilleTeamMembers.getMemberNames().then((teamMemberNames) => {
 		if (teamMemberNames && teamMemberNames.length) {
-			cachedNavItems = _.cloneDeep(defaultNavItems);
+			cachedNavItems = JSON.parse(JSON.stringify(defaultNavItems));
 
 			teamMemberNames.forEach((tm) => {
 				cachedNavItems.meganavSections[4].meganavSectionItems.push({
@@ -215,7 +215,7 @@ exports.get = function (navSelected) {
 		if (navCachedBySelected[navSelected]) {
 			return navCachedBySelected[navSelected];
 		} else {
-			const navItems = _.cloneDeep(cachedNavItems);
+			const navItems = JSON.parse(JSON.stringify(cachedNavItems));
 
 			if (navItems && navItems.navItems) {
 				navItems.navItems.map((obj) => {
